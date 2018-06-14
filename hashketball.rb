@@ -2,7 +2,7 @@
 
 def game_hash
   {
-  :home_team => {
+  :home => {
     :name => "Brooklyn Nets",
     :colors => ["Black", "White"],
     :players => [
@@ -63,7 +63,7 @@ def game_hash
       }
     ]
   },
-  :away_team => {
+  :away => {
     :name => "Charlotte Hornets",
     :colors => ["Turquoise", "Purple"],
     :players => [
