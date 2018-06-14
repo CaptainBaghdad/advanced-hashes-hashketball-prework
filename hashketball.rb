@@ -197,15 +197,13 @@ def player_stats(name)
   all_players = h.concat(a)
   ans = all_players.find {|player| player.fetch(:name) == name}
   ans.delete_if {|k, v| k == :name}
- 
- 
- 
+end
+
+
+
+
+def big_shoe_rebounds
   
-  
-  
-  
-  
- 
   
   
 end 
