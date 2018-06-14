@@ -131,7 +131,7 @@ def num_points_scored(player_name)
   
  ah =  game_hash[:home][:players]
  aa =  game_hash[:away][:players]
- puts ah.class
+
  
  all_players = ah.concat(aa)
  find_player = all_players.find {|player| player.fetch(:name) == player_name }
