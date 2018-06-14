@@ -134,7 +134,7 @@ def num_points_scored(player_name)
  puts ah.class
  
  all_players = ah.concat(aa)
- find_player = all_players.find {|player| player.fetch(:player_name) == player_name }
+ find_player = all_players.find {|player| player.fetch(:name) == player_name }
   find_player.fetch(:points)
   
 end
@@ -147,7 +147,7 @@ def shoe_size(player_name)
  aa =  game_hash[:away][:players]
  
  all_players = ah.concat(aa)
- find_player = all_players.find {|player| player.fetch(:player_name) == player_name }
+ find_player = all_players.find {|player| player.fetch(:name) == player_name }
   find_player.fetch(:shoe)
   
 end 
@@ -195,8 +195,8 @@ def player_stats(name)
   h = game_hash[:home][:players]
   a = game_hash[:away][:players]
   all_players = h.concat(a)
-  ans = all_players.find {|player| player.fetch(:player_name) == name}
-  ans.delete_if {|k, v| k == :player_name}
+  ans = all_players.find {|player| player.fetch(:name) == name}
+  ans.delete_if {|k, v| k == :name}
  
  
  
